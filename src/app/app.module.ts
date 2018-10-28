@@ -3,14 +3,20 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ScrollTestComponent } from './scroll-test/scroll-test.component';
+import {ScrollDispatchModule} from '@angular/cdk/scrolling'
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ScrollTestComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    ScrollDispatchModule
   ],
   providers: [],
   bootstrap: [AppComponent]
